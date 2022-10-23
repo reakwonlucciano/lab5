@@ -51,6 +51,6 @@ componentDidMount() {
                 <h3>Hello from my Read component!</h3>
                 <Books books={this.state.books}></Books>
             </div>
-        );
-    }
-}
+        ); //return 
+    } // render
+} //class
