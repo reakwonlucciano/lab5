@@ -1,9 +1,17 @@
+//import react 
 import React from "react";
 
+
+
+// class for the create component// extends and export word used to export app.js
 export class Create extends React.Component{
+    
+    //form
 
     constructor(){
         super();
+        
+        //must bind 
         this.handleSubmit=this.handleSubmit.bind(this);
         this.onChangeBookTitle =this.onChangeBookTitle.bind(this);
         this.onChangeBookCover=this.onChangeBookCover.bind(this);
@@ -33,6 +41,7 @@ export class Create extends React.Component{
         })
     }
 
+    // constructor 
     onChangeBookTitle(e){
         this.setState({
             title:e.target.value
@@ -54,6 +63,9 @@ export class Create extends React.Component{
 
 
     render(){
+        
+        //returning components 
+        
         return(
             <form onSubmit={this.handleSubmit}>
 
@@ -84,4 +96,6 @@ export class Create extends React.Component{
                 </div>
                 <input type="submit" value="Submit" />
                  </form>
- )}}
+ ) //return 
+} //render 
+} //class
